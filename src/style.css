@@ -44,6 +44,49 @@ header a {
   margin: 0;
   letter-spacing: 3px;
 }
+footer {
+  color: white;
+  background-image: linear-gradient(
+      rgba(39, 32, 68, 0.9),
+      rgba(39, 32, 68, 0.9)
+    ),
+    url(/images/Lisbon-houses.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px;
+}
+section {
+  max-width: 1200px;
+}
+footer h3 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+footer p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0px;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+  opacity: 0.8;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0px;
+}
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+}
 
 @media (max-width: 900px) {
   header {
