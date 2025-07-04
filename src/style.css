@@ -70,6 +70,7 @@ main h3 {
   font-weight: 700;
   font-size: 40px;
   line-height: 50px;
+  color: var(--color1);
 }
 main p {
   font-weight: 400;
@@ -91,14 +92,11 @@ footer {
 footer h3 {
   font-weight: 700;
   font-size: 20px;
-
-  letter-spacing: 0%;
 }
 footer p {
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
-  letter-spacing: 0px;
 }
 footer a {
   text-decoration: none;
@@ -106,8 +104,6 @@ footer a {
   opacity: 0.8;
   font-weight: 400;
   font-size: 16px;
-
-  letter-spacing: 0px;
 }
 footer ul {
   list-style: none;
@@ -139,6 +135,10 @@ section.secondary {
   opacity: 0.7;
   margin: 3px 0;
 }
+.btn a {
+  text-decoration: none;
+  color: white;
+}
 .card {
   color: var(--color1);
   padding: 40px;
@@ -148,6 +148,15 @@ section.secondary {
   font-weight: 700;
   font-size: 24px;
   padding: 30px 0;
+}
+.card-footer {
+  padding: 24px 32px;
+}
+.btn {
+  background-color: #462cb2;
+  color: white;
+  text-align: center;
+  padding: 16px 32px;
 }
 .container {
   max-width: 1200px;
@@ -167,10 +176,20 @@ section.secondary {
   grid-template-columns: 1fr 2fr 2fr;
 }
 .img-responsive {
-  max-width: 100%;
+  width: 100%;
 }
 .padding-10-top {
   padding-top: 10px;
+}
+.padding-0 {
+  padding: 0;
+}
+.relative-bottom {
+  position: relative;
+  bottom: -23px;
+}
+.text-center {
+  text-align: center;
 }
 
 @media (max-width: 900px) {
@@ -208,5 +227,9 @@ section.secondary {
   .grid {
     grid-template-columns: 1fr;
     grid-gap: 30px;
+  }
+  .relative-bottom {
+    position: relative;
+    bottom: 0;
   }
 }
