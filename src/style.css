@@ -123,28 +123,31 @@ section.primary {
 section.secondary {
   background-color: #f8f8f8;
   padding: 60px;
+  margin: 0;
 }
-h4.card {
-  font-weight: 400;
-  font-size: 16px;
+.card h4 {
+  font-weight: 700;
+  font-size: 24px;
+  margin: 0;
 }
-h5.card {
+.card h5 {
   font-weight: 700;
   font-size: 13px;
-  color: var(--color1);
+  margin: 0;
 }
-
-p.card {
-  font-weight: 400;
-  font-size: 16px;
+.card p {
   opacity: 0.7;
+  margin: 3px 0;
 }
 .card {
   color: var(--color1);
+  padding: 40px;
+  background-color: white;
 }
 .cardhead {
   font-weight: 700;
   font-size: 24px;
+  padding: 30px 0;
 }
 .container {
   max-width: 1200px;
@@ -165,6 +168,9 @@ p.card {
 }
 .img-responsive {
   max-width: 100%;
+}
+.padding-10-top {
+  padding-top: 10px;
 }
 
 @media (max-width: 900px) {
@@ -192,6 +198,12 @@ p.card {
   }
   section {
     padding: 30px 0;
+  }
+  section.primary {
+    padding: 30px;
+  }
+  section.secondary {
+    padding: 10px;
   }
   .grid {
     grid-template-columns: 1fr;
