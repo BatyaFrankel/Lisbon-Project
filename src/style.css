@@ -191,6 +191,12 @@ section.secondary {
 .text-center {
   text-align: center;
 }
+.two-gap {
+  grid-gap: 2px;
+}
+.embed {
+  aspect-ratio: 1 / 1;
+}
 
 @media (max-width: 900px) {
   header {
@@ -231,5 +237,8 @@ section.secondary {
   .relative-bottom {
     position: relative;
     bottom: 0;
+  }
+  .embed {
+    aspect-ratio: auto;
   }
 }
